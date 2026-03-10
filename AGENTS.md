@@ -2,8 +2,11 @@
 
 ## Cursor Cloud specific instructions
 
-This is a greenfield repository ("plotpoint") with no application code, dependencies, or services yet. As the codebase evolves, update this section with:
+**Stack**: Next.js 15 (App Router) + Tailwind CSS v4 + TypeScript.
 
-- How to install dependencies and which package manager to use.
-- How to run lint, tests, and the dev server.
-- Any non-obvious environment caveats discovered during development.
+- `npm run dev` starts the dev server on port 3000.
+- `npm run lint` runs ESLint; `npm run build` does a production build.
+- Fonts are loaded via external CDN imports in `src/app/globals.css` (Fontshare for Cabinet Grotesk, Google Fonts for Fira Sans Condensed + Inter).
+- Dark mode uses a `.dark` class on `<html>` with `@custom-variant dark` in Tailwind v4 — NOT the default media query approach.
+- Cover images are SVG placeholders; the user will replace with actual JPG/PNG assets.
+- Buy buttons are non-functional placeholders for future Gumroad/Shopify integration.

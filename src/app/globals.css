@@ -1,0 +1,93 @@
+@import url("https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700&family=Inter:wght@300;400;500;600&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-base: #F5F5F7;
+  --color-base-dark: #1F1F23;
+  --color-chrome: #C7C9CC;
+  --color-chrome-light: #E8E8EB;
+  --color-charcoal: #1F1F23;
+
+  --color-electric: #0066FF;
+  --color-cobalt: #0047CC;
+  --color-sapphire: #1A2E8A;
+
+  --color-hotpink: #FF2E9F;
+  --color-magenta: #C2185B;
+  --color-fuchsia: #D1006C;
+
+  --color-lime: #A8FF00;
+  --color-neonmoss: #7CFF3A;
+  --color-chartreuse: #B4F000;
+
+  --font-heading: "Cabinet Grotesk", "Inter", system-ui, sans-serif;
+  --font-sub: "Fira Sans Condensed", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-base);
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #0066FF33;
+  color: var(--color-charcoal);
+}
+
+/* Chrome gradient utility */
+.chrome-gradient {
+  background: linear-gradient(
+    135deg,
+    #E8E8EB 0%,
+    #C7C9CC 25%,
+    #F5F5F7 50%,
+    #C7C9CC 75%,
+    #E8E8EB 100%
+  );
+}
+
+.chrome-text {
+  background: linear-gradient(
+    135deg,
+    #C7C9CC 0%,
+    #F5F5F7 40%,
+    #C7C9CC 60%,
+    #E8E8EB 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Neon glow utilities */
+.glow-electric {
+  text-shadow: 0 0 20px #0066FF66, 0 0 40px #0066FF33;
+}
+
+.glow-pink {
+  text-shadow: 0 0 20px #FF2E9F66, 0 0 40px #FF2E9F33;
+}
+
+.glow-lime {
+  text-shadow: 0 0 20px #A8FF0066, 0 0 40px #A8FF0033;
+}
+
+/* Neon border glow */
+.neon-border-electric {
+  box-shadow: 0 0 8px #0066FF44, inset 0 0 8px #0066FF22;
+}
+
+.neon-border-pink {
+  box-shadow: 0 0 8px #FF2E9F44, inset 0 0 8px #FF2E9F22;
+}
