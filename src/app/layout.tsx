@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 export const metadata: Metadata = {
   title: "Plot Points Travel — Filming Location Guides",
   description:
-    "City guides to real filming locations. Walk the scenes. Know the spots. Plot Points Travel.",
+    "Walk the scenes you grew up on. City guides to real filming locations. Plot Points Travel.",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="min-h-screen flex flex-col bg-base dark:bg-base-dark text-charcoal dark:text-base">
+      <body className="min-h-screen flex flex-col bg-base-dark text-white">
         <ThemeProvider>
           <Header />
           <main className="flex-1">{children}</main>

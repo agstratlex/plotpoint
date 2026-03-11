@@ -34,60 +34,180 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-base);
-  color: var(--color-charcoal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background-color: #0066FF33;
-  color: var(--color-charcoal);
+  background-color: #FF2E9F44;
+  color: #fff;
 }
 
-/* Chrome gradient utility */
-.chrome-gradient {
+/* ── Neon gradient text ── */
+.gradient-text-neon {
   background: linear-gradient(
-    135deg,
-    #E8E8EB 0%,
-    #C7C9CC 25%,
-    #F5F5F7 50%,
-    #C7C9CC 75%,
-    #E8E8EB 100%
-  );
-}
-
-.chrome-text {
-  background: linear-gradient(
-    135deg,
-    #C7C9CC 0%,
-    #F5F5F7 40%,
-    #C7C9CC 60%,
-    #E8E8EB 100%
+    90deg,
+    #0066FF 0%,
+    #6B3FA0 25%,
+    #FF2E9F 50%,
+    #A8FF00 80%,
+    #FFB347 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Neon glow utilities */
+.gradient-text-electric-pink {
+  background: linear-gradient(90deg, #0066FF 0%, #9B59FF 40%, #FF2E9F 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-pink-lime {
+  background: linear-gradient(90deg, #FF2E9F 0%, #D1006C 30%, #A8FF00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-lime-warm {
+  background: linear-gradient(90deg, #A8FF00 0%, #FFB347 50%, #FF6B6B 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ── Chrome / metallic effects ── */
+.chrome-gradient {
+  background: linear-gradient(
+    135deg,
+    #D4D4D8 0%,
+    #F5F5F7 20%,
+    #A1A1AA 40%,
+    #F5F5F7 60%,
+    #D4D4D8 80%,
+    #E8E8EB 100%
+  );
+}
+
+.chrome-border {
+  border-image: linear-gradient(135deg, #E8E8EB 0%, #A1A1AA 50%, #F5F5F7 100%) 1;
+}
+
+.chrome-text {
+  background: linear-gradient(
+    135deg,
+    #A1A1AA 0%,
+    #F5F5F7 30%,
+    #C7C9CC 50%,
+    #F5F5F7 70%,
+    #A1A1AA 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ── Neon glow utilities ── */
 .glow-electric {
-  text-shadow: 0 0 20px #0066FF66, 0 0 40px #0066FF33;
+  text-shadow: 0 0 20px #0066FF88, 0 0 60px #0066FF44, 0 0 100px #0066FF22;
 }
 
 .glow-pink {
-  text-shadow: 0 0 20px #FF2E9F66, 0 0 40px #FF2E9F33;
+  text-shadow: 0 0 20px #FF2E9F88, 0 0 60px #FF2E9F44, 0 0 100px #FF2E9F22;
 }
 
 .glow-lime {
-  text-shadow: 0 0 20px #A8FF0066, 0 0 40px #A8FF0033;
+  text-shadow: 0 0 20px #A8FF0088, 0 0 60px #A8FF0044;
 }
 
-/* Neon border glow */
 .neon-border-electric {
-  box-shadow: 0 0 8px #0066FF44, inset 0 0 8px #0066FF22;
+  box-shadow: 0 0 12px #0066FF55, 0 0 30px #0066FF22, inset 0 0 12px #0066FF15;
 }
 
 .neon-border-pink {
-  box-shadow: 0 0 8px #FF2E9F44, inset 0 0 8px #FF2E9F22;
+  box-shadow: 0 0 12px #FF2E9F55, 0 0 30px #FF2E9F22, inset 0 0 12px #FF2E9F15;
+}
+
+.neon-border-lime {
+  box-shadow: 0 0 12px #A8FF0055, 0 0 30px #A8FF0022, inset 0 0 12px #A8FF0015;
+}
+
+/* ── Animated gradient background ── */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animated-gradient-bg {
+  background: linear-gradient(
+    135deg,
+    #1F1F23 0%,
+    #1A2E8A 25%,
+    #1F1F23 50%,
+    #2D1B4E 75%,
+    #1F1F23 100%
+  );
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+/* ── Scanline overlay (Y2K nostalgia) ── */
+.scanlines::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+}
+
+.dark .scanlines::after {
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(255, 255, 255, 0.015) 2px,
+    rgba(255, 255, 255, 0.015) 4px
+  );
+}
+
+/* ── Holographic shimmer ── */
+@keyframes holo-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.holo-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #0066FF15 20%,
+    #FF2E9F15 40%,
+    #A8FF0015 60%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: holo-shimmer 6s linear infinite;
+}
+
+/* ── Grid overlay ── */
+.grid-overlay {
+  background-image:
+    linear-gradient(rgba(0, 102, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 102, 255, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.dark .grid-overlay {
+  background-image:
+    linear-gradient(rgba(0, 102, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 102, 255, 0.08) 1px, transparent 1px);
 }

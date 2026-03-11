@@ -4,64 +4,64 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 bg-base dark:bg-base-dark" />
-      <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]">
-        <div
-          className="w-full h-full"
-          style={{
-            backgroundImage:
-              "repeating-linear-gradient(90deg, #1F1F23 0px, #1F1F23 1px, transparent 1px, transparent 60px), repeating-linear-gradient(0deg, #1F1F23 0px, #1F1F23 1px, transparent 1px, transparent 60px)",
-          }}
-        />
-      </div>
+    <section className="relative overflow-hidden animated-gradient-bg scanlines">
+      {/* Grid overlay */}
+      <div className="absolute inset-0 grid-overlay pointer-events-none" />
 
-      <div className="relative mx-auto max-w-6xl px-6 pt-24 pb-20 md:pt-32 md:pb-28">
-        <div className="max-w-2xl">
+      {/* Neon orbs */}
+      <div className="absolute top-16 right-[10%] w-64 h-64 rounded-full bg-electric/15 blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 left-[5%] w-48 h-48 rounded-full bg-hotpink/15 blur-[80px] pointer-events-none" />
+      <div className="absolute top-1/2 right-[30%] w-32 h-32 rounded-full bg-lime/10 blur-[60px] pointer-events-none" />
+
+      <div className="relative mx-auto max-w-6xl px-6 pt-28 pb-24 md:pt-40 md:pb-36">
+        <div className="max-w-3xl">
           {/* Eyebrow */}
-          <div className="flex items-center gap-3 mb-6">
-            <span className="h-px w-8 bg-electric" />
-            <span className="font-sub text-xs font-bold uppercase tracking-[0.3em] text-electric">
+          <div className="flex items-center gap-3 mb-8">
+            <span className="h-px w-10 bg-gradient-to-r from-electric to-hotpink" />
+            <span className="font-sub text-xs font-bold uppercase tracking-[0.35em] text-electric">
               Filming Location Guides
             </span>
+            <span className="h-px w-10 bg-gradient-to-r from-hotpink to-lime opacity-50" />
           </div>
 
-          {/* Headline */}
-          <h1 className="font-heading text-5xl md:text-7xl font-extrabold uppercase tracking-tight text-charcoal dark:text-base leading-[0.9]">
-            Walk the
+          {/* Headline — multi-color gradient like reference */}
+          <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-extrabold uppercase leading-[0.85] tracking-tight">
+            <span className="text-white">Walk the</span>
             <br />
-            <span className="text-electric glow-electric">Scenes.</span>
+            <span className="text-white">scenes </span>
+            <span className="gradient-text-electric-pink">you grew</span>
+            <br />
+            <span className="gradient-text-electric-pink">up </span>
+            <span className="gradient-text-lime-warm">on.</span>
           </h1>
 
-          <p className="mt-6 font-body text-lg text-charcoal/60 dark:text-base/50 max-w-md leading-relaxed">
+          <p className="mt-8 font-body text-lg md:text-xl text-white/50 max-w-md leading-relaxed">
             City guides to real filming locations. No fluff — just the spots,
             the stories, and exactly how to get there.
           </p>
 
-          {/* CTA */}
+          {/* CTAs */}
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               href="/guides/new-orleans"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-electric hover:bg-cobalt text-base font-sub font-bold text-sm uppercase tracking-wider transition-colors"
+              className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-electric hover:bg-cobalt text-white font-sub font-bold text-sm uppercase tracking-wider transition-all neon-border-electric hover:scale-[1.02]"
             >
               <span>New Orleans Guide</span>
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
             <Link
               href="/#guides"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-chrome dark:border-chrome/30 text-charcoal dark:text-base font-sub font-bold text-sm uppercase tracking-wider hover:border-electric hover:text-electric transition-colors"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-white/20 text-white/80 font-sub font-bold text-sm uppercase tracking-wider hover:border-hotpink hover:text-hotpink transition-all hover:neon-border-pink"
             >
               Browse All Guides
             </Link>
           </div>
         </div>
 
-        {/* Decorative accent */}
-        <div className="absolute top-12 right-8 md:right-16 w-32 h-32 md:w-48 md:h-48 rounded-full bg-electric/5 dark:bg-electric/10 blur-3xl pointer-events-none" />
-        <div className="absolute bottom-8 right-32 w-24 h-24 rounded-full bg-hotpink/5 dark:bg-hotpink/10 blur-2xl pointer-events-none" />
+        {/* Chrome decorative bar */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-chrome/30 to-transparent" />
       </div>
     </section>
   );
