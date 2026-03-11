@@ -1,0 +1,60 @@
+<svg width="600" height="800" viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neonGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0066FF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF2E9F" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C7C9CC"/>
+      <stop offset="50%" stop-color="#F5F5F7"/>
+      <stop offset="100%" stop-color="#C7C9CC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="800" fill="#1F1F23"/>
+
+  <!-- Film reel circle (decorative) -->
+  <circle cx="300" cy="280" r="120" fill="none" stroke="#C7C9CC" stroke-width="1.5" opacity="0.15"/>
+  <circle cx="300" cy="280" r="40" fill="none" stroke="#C7C9CC" stroke-width="1" opacity="0.1"/>
+  <circle cx="300" cy="280" r="80" fill="none" stroke="#C7C9CC" stroke-width="0.5" opacity="0.08"/>
+
+  <!-- Neon building outline - French Quarter style -->
+  <g filter="url(#glow)" opacity="0.9">
+    <!-- Main building body -->
+    <rect x="170" y="300" width="260" height="200" fill="none" stroke="url(#neonGlow)" stroke-width="2.5"/>
+    <!-- Roof -->
+    <path d="M 160 300 L 300 240 L 440 300" fill="none" stroke="#0066FF" stroke-width="2.5"/>
+    <!-- Balcony -->
+    <rect x="170" y="380" width="260" height="3" fill="url(#neonGlow)" opacity="0.6"/>
+    <!-- Columns -->
+    <line x1="220" y1="380" x2="220" y2="500" stroke="#FF2E9F" stroke-width="1.5" opacity="0.7"/>
+    <line x1="270" y1="380" x2="270" y2="500" stroke="#0066FF" stroke-width="1.5" opacity="0.7"/>
+    <line x1="330" y1="380" x2="330" y2="500" stroke="#FF2E9F" stroke-width="1.5" opacity="0.7"/>
+    <line x1="380" y1="380" x2="380" y2="500" stroke="#0066FF" stroke-width="1.5" opacity="0.7"/>
+    <!-- Balcony railing decorative -->
+    <path d="M 170 395 Q 195 410 220 395 Q 245 410 270 395 Q 295 410 330 395 Q 355 410 380 395 Q 405 410 430 395" fill="none" stroke="url(#neonGlow)" stroke-width="1.5" opacity="0.5"/>
+  </g>
+
+  <!-- Chrome bar -->
+  <rect x="100" y="220" width="400" height="4" fill="url(#chrome)" opacity="0.3"/>
+
+  <!-- Title text -->
+  <text x="300" y="600" text-anchor="middle" font-family="system-ui, sans-serif" font-size="48" font-weight="800" fill="#F5F5F7" letter-spacing="0.05em">PLOT POINTS</text>
+
+  <!-- City name -->
+  <text x="300" y="680" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" font-weight="800" fill="#F5F5F7" letter-spacing="0.02em">NEW ORLEANS</text>
+
+  <!-- Subtitle -->
+  <text x="300" y="720" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#C7C9CC" letter-spacing="0.3em">FILMING LOCATIONS GUIDE</text>
+
+  <!-- Accent line -->
+  <rect x="200" y="640" width="200" height="2" fill="#0066FF" opacity="0.6"/>
+</svg>
