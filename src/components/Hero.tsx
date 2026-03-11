@@ -24,38 +24,31 @@ export function Hero() {
             <span className="h-px w-10 bg-gradient-to-r from-hotpink to-lime opacity-50" />
           </div>
 
-          {/* Headline — multi-color gradient like reference */}
+          {/* Headline */}
           <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-extrabold uppercase leading-[0.85] tracking-tight">
-            <span className="text-white">Walk the</span>
+            <span className="text-white">You&apos;ve seen</span>
             <br />
-            <span className="text-white">scenes </span>
-            <span className="gradient-text-electric-pink">you grew</span>
+            <span className="text-white">the scenes.</span>
             <br />
-            <span className="gradient-text-electric-pink">up </span>
-            <span className="gradient-text-lime-warm">on.</span>
+            <span className="gradient-text-electric-pink">Now go </span>
+            <span className="gradient-text-lime-warm">find them.</span>
           </h1>
 
-          <p className="mt-8 font-body text-lg md:text-xl text-white/50 max-w-md leading-relaxed">
-            City guides to real filming locations. No fluff — just the spots,
-            the stories, and exactly how to get there.
+          <p className="mt-8 font-body text-lg md:text-xl text-white/50 max-w-lg leading-relaxed">
+            Filming location guides for the cities you&apos;ve been dreaming
+            about — built for the trip you&apos;re already planning.
           </p>
 
-          {/* CTAs */}
-          <div className="mt-10 flex flex-wrap gap-4">
+          {/* CTA */}
+          <div className="mt-10">
             <Link
-              href="/guides/new-orleans"
+              href="/#guides"
               className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-electric hover:bg-cobalt text-white font-sub font-bold text-sm uppercase tracking-wider transition-all neon-border-electric hover:scale-[1.02]"
             >
-              <span>New Orleans Guide</span>
+              <span>Browse the Guides</span>
               <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </Link>
-            <Link
-              href="/#guides"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-white/20 text-white/80 font-sub font-bold text-sm uppercase tracking-wider hover:border-hotpink hover:text-hotpink transition-all hover:neon-border-pink"
-            >
-              Browse All Guides
             </Link>
           </div>
         </div>
