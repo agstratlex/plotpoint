@@ -115,7 +115,7 @@ export default function NewOrleansGuidePage() {
             <div className="relative w-64 md:w-72 lg:w-80 shrink-0">
               <div className="relative aspect-[3/4] rounded-xl overflow-hidden border border-electric/30 neon-border-electric">
                 <Image
-                  src="/images/nola-cover.svg"
+                  src="/images/nola-cover.png"
                   alt="New Orleans Filming Locations Guide cover"
                   fill
                   unoptimized

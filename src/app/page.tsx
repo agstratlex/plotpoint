@@ -31,21 +31,21 @@ export default function Home() {
               slug="new-orleans"
               city="New Orleans"
               tagline="Filming locations from the French Quarter to the Garden District."
-              coverSrc="/images/nola-cover.svg"
+              coverSrc="/images/nola-cover.png"
               accentColor="electric"
             />
             <GuideCard
-              slug="new-york"
-              city="New York"
-              tagline="From Seinfeld diners to Scorsese streets."
+              slug="seattle"
+              city="Seattle"
+              tagline="From Sleepless houseboats to Twin Peaks diners."
               coverSrc="/images/placeholder-cover.svg"
               accentColor="pink"
               comingSoon
             />
             <GuideCard
-              slug="los-angeles"
-              city="Los Angeles"
-              tagline="Studio lots to street-level scenes."
+              slug="chicago"
+              city="Chicago"
+              tagline="Ferris Bueller's downtown to The Dark Knight's skyline."
               coverSrc="/images/placeholder-cover.svg"
               accentColor="lime"
               comingSoon
