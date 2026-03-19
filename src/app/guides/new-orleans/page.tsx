@@ -177,6 +177,50 @@ export default function NewOrleansGuidePage() {
         </div>
       </section>
 
+      {/* ── Productions covered ── */}
+      <section className="relative bg-charcoal border-t border-white/[0.06]">
+        <div className="relative mx-auto max-w-6xl px-6 py-20">
+          <div className="flex items-center gap-3 mb-2">
+            <span className="h-px w-10 bg-electric" />
+            <span className="font-sub text-xs font-bold uppercase tracking-[0.35em] text-electric">
+              17 Films &amp; Series
+            </span>
+          </div>
+          <h2 className="font-heading text-2xl md:text-3xl font-extrabold uppercase tracking-tight text-white mb-8">
+            What&apos;s{" "}
+            <span className="gradient-text-electric-pink">Covered</span>
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {[
+              "12 Years a Slave",
+              "American Horror Story: Coven",
+              "American Horror Story: Freak Show",
+              "Deja Vu",
+              "Double Jeopardy",
+              "Girls Trip",
+              "Green Book",
+              "Interview with the Vampire (Film)",
+              "Interview with the Vampire (Series)",
+              "Mayfair Witches",
+              "NCIS: New Orleans",
+              "Now You See Me",
+              "The Originals",
+              "Treme",
+              "True Blood",
+              "Your Honor",
+              "A Streetcar Named Desire",
+            ].map((title) => (
+              <span
+                key={title}
+                className="px-3.5 py-1.5 rounded-full border border-white/10 text-xs font-sub font-semibold text-white/50"
+              >
+                {title}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Bottom CTA ── */}
       <section className="relative overflow-hidden animated-gradient-bg scanlines">
         <div className="absolute inset-0 grid-overlay pointer-events-none" />
