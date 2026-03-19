@@ -38,9 +38,8 @@ export default function Home() {
               slug="seattle"
               city="Seattle"
               tagline="From Sleepless houseboats to Twin Peaks diners."
-              coverSrc="/images/placeholder-cover.svg"
+              coverSrc="/images/seattle-cover.png"
               accentColor="pink"
-              comingSoon
             />
             <GuideCard
               slug="chicago"

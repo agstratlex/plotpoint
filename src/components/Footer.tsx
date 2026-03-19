@@ -36,9 +36,12 @@ export function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <span className="text-sm text-white/15">
-                    More cities coming soon
-                  </span>
+                  <Link
+                    href="/guides/seattle"
+                    className="text-sm text-white/40 hover:text-hotpink transition-colors"
+                  >
+                    Seattle
+                  </Link>
                 </li>
               </ul>
             </div>
