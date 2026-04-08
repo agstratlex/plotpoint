@@ -78,8 +78,8 @@ export default function ChicagoGuidePage() {
               {/* Metadata pills */}
               <div className="mt-6 flex flex-wrap gap-3 justify-center lg:justify-start">
                 {[
-                  { label: "100+ Locations", color: "border-lime/30 text-lime" },
-                  { label: "20+ Productions", color: "border-electric/30 text-electric" },
+                  { label: "133 Locations", color: "border-lime/30 text-lime" },
+                  { label: "23 Productions", color: "border-electric/30 text-electric" },
                   { label: "Digital PDF", color: "border-hotpink/30 text-hotpink" },
                 ].map(({ label, color }) => (
                   <span
@@ -112,7 +112,7 @@ export default function ChicagoGuidePage() {
             <div className="relative w-64 md:w-72 lg:w-80 shrink-0">
               <div className="relative aspect-[3/4] rounded-xl overflow-hidden border border-lime/30 neon-border-lime">
                 <Image
-                  src="/images/chicago-cover.svg"
+                  src="/images/chicago-cover.png"
                   alt="Chicago Filming Locations Guide cover"
                   fill
                   unoptimized
@@ -178,7 +178,7 @@ export default function ChicagoGuidePage() {
           <div className="flex items-center gap-3 mb-2">
             <span className="h-px w-10 bg-electric" />
             <span className="font-sub text-xs font-bold uppercase tracking-[0.35em] text-electric">
-              20+ Productions
+              23 Films &amp; Series
             </span>
           </div>
           <h2 className="font-heading text-2xl md:text-3xl font-extrabold uppercase tracking-tight text-white mb-8">
@@ -187,28 +187,29 @@ export default function ChicagoGuidePage() {
           </h2>
           <div className="flex flex-wrap gap-3">
             {[
-              "Ferris Bueller's Day Off",
-              "The Dark Knight",
-              "The Blues Brothers",
-              "The Fugitive",
-              "Home Alone",
               "Batman Begins",
-              "The Untouchables",
-              "Risky Business",
-              "My Best Friend's Wedding",
-              "The Break-Up",
-              "Source Code",
-              "Transformers: Dark of the Moon",
-              "Jupiter Ascending",
-              "Shameless",
-              "The Bear",
-              "ER",
+              "Candyman",
               "Chicago Fire",
               "Chicago P.D.",
-              "A League of Their Own",
-              "When Harry Met Sally…",
+              "Divergent",
+              "Empire",
+              "Ferris Bueller's Day Off",
               "High Fidelity",
-              "Candyman",
+              "Home Alone",
+              "My Best Friend's Wedding",
+              "Prison Break",
+              "Public Enemies",
+              "Risky Business",
+              "Road to Perdition",
+              "Shameless",
+              "The Bear",
+              "The Blues Brothers",
+              "The Dark Knight",
+              "The Exorcist III",
+              "The Fugitive",
+              "The Untouchables",
+              "Transformers: Dark of the Moon",
+              "Widows",
             ].map((title) => (
               <span
                 key={title}
@@ -233,7 +234,7 @@ export default function ChicagoGuidePage() {
             <span className="gradient-text-neon">the scenes?</span>
           </h2>
           <p className="mt-5 font-body text-white/40 max-w-md mx-auto">
-            100+ filming locations. Maps, directions, and behind-the-scenes
+            133 filming locations. Maps, directions, and behind-the-scenes
             context for every stop.
           </p>
           <button className="mt-8 inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-lime hover:bg-chartreuse text-charcoal font-sub font-bold text-sm uppercase tracking-wider transition-all neon-border-lime hover:scale-[1.02]">

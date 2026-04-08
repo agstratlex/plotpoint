@@ -45,7 +45,7 @@ export default function Home() {
               slug="chicago"
               city="Chicago"
               tagline="Ferris Bueller's downtown to The Dark Knight's skyline."
-              coverSrc="/images/chicago-cover.svg"
+              coverSrc="/images/chicago-cover.png"
               accentColor="lime"
             />
           </div>
