@@ -43,6 +43,14 @@ export function Footer() {
                     Seattle
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href="/guides/chicago"
+                    className="text-sm text-white/40 hover:text-lime transition-colors"
+                  >
+                    Chicago
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
