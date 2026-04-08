@@ -96,12 +96,12 @@ export default function NewOrleansGuidePage() {
 
               {/* Buy CTA */}
               <div className="mt-10 flex flex-wrap gap-4 justify-center lg:justify-start">
-                <button className="group inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-electric hover:bg-cobalt text-white font-sub font-bold text-sm uppercase tracking-wider transition-all neon-border-electric hover:scale-[1.02]">
+                <a href="https://payhip.com/b/fO8Qk" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-electric hover:bg-cobalt text-white font-sub font-bold text-sm uppercase tracking-wider transition-all neon-border-electric hover:scale-[1.02]">
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" />
                   </svg>
                   <span>Get the Guide — $10</span>
-                </button>
+                </a>
                 <Link
                   href="#preview"
                   className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-white/15 text-white/70 font-sub font-bold text-sm uppercase tracking-wider hover:border-hotpink hover:text-hotpink transition-all"
@@ -236,9 +236,9 @@ export default function NewOrleansGuidePage() {
             50+ filming locations. Maps, directions, and behind-the-scenes
             context for every stop.
           </p>
-          <button className="mt-8 inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-electric hover:bg-cobalt text-white font-sub font-bold text-sm uppercase tracking-wider transition-all neon-border-electric hover:scale-[1.02]">
+          <a href="https://payhip.com/b/fO8Qk" target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-electric hover:bg-cobalt text-white font-sub font-bold text-sm uppercase tracking-wider transition-all neon-border-electric hover:scale-[1.02]">
             <span>Get the Guide — $10</span>
-          </button>
+          </a>
         </div>
       </section>
     </>
